@@ -9,8 +9,8 @@
 - Camilo Gaviria Castrillón - cgavir29@eafit.edu.co 
 
 ## 3. GitHub y Carpeta
-- https://github.com/cgavir29/TET-Proyecto-4 
-- https://drive.google.com/drive/folders/1piiqewvpliQUFRVZYRBsc58DWFiEK1KA?usp=sharing 
+- [GitHub](https://github.com/cgavir29/TET-Proyecto-4)
+- [Carpeta](https://drive.google.com/drive/folders/1piiqewvpliQUFRVZYRBsc58DWFiEK1KA?usp=sharing)
 
 ## 4. Ideas Preliminares de Proyecto 4
 Paralelizar un algoritmo de ordenamiento
