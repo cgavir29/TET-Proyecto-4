@@ -13,8 +13,8 @@
 - [Carpeta Drive](https://drive.google.com/drive/folders/1piiqewvpliQUFRVZYRBsc58DWFiEK1KA?usp=sharing)
 
 ## 4. Ideas Preliminares de Proyecto 4
-Paralelizar un algoritmo de ordenamiento
-Paralelizar un algoritmo de búsqueda
+- Paralelizar un algoritmo de ordenamiento
+- Paralelizar un algoritmo de búsqueda
 
 ## 5. Problema o Caso de Estudio a Resolver
 Merge Sort Paralelo
