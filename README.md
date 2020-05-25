@@ -37,5 +37,10 @@ Conocer los conceptos de paralelismo en Arquitectura de Intel y conocer la estru
 - http://rosalind.info/problems/ms/
 - https://www.coursera.org/learn/parallelism-ia
 
-## 10. Otras Secciones que Considere
+## 10. Código de Honor
+> Yo **Santiago Arredondo Quintero** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
+
+> Yo **Kevyn Santiago Gómez Patiño** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
+
+> Yo **Camilo Gaviria Castrillón** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
 
