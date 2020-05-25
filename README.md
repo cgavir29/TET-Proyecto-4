@@ -17,7 +17,7 @@ Paralelizar un algoritmo de ordenamiento
 Paralelizar un algoritmo de búsqueda
 
 ## 5. Problema o Caso de Estudio a Resolver
-Parallel Merge Sort
+Merge Sort Paralelo
 
 ## 6. Objetivos y Alcance
 Implementar el algoritmo utilizando buenas prácticas y asegurando un funcionamiento correcto y un nivel de paralelismo acorde a las técnicas utilizadas que puedan llegar a reducir el tiempo de ejecución con un objetivo de reducción del 30%, comparándolo con el algoritmo ejecutado con una implementación secuencial.
