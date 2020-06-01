@@ -22,9 +22,9 @@
 
 ## 5. Problema o Caso de Estudio a Resolver
 
-Merge Sort Paralelo
+Merge Sort Paralelo.
 
-Se realizo un proceso de investigación para determinar si el algoritmo era débilmente acoplado y por tanto apto para MPI. En el paper _**"Analysis of parallel merge sort algorithm"**_ de Manwade, K. B. (2010) se evidencia la implementación de éste en un ambiente MPI y su evaluación de desempeño como algoritmo débilmente acoplado.
+Se realizó un proceso de investigación para determinar si el algoritmo era débilmente acoplado y por tanto apto para MPI. En el paper _**"Analysis of parallel merge sort algorithm"**_ de Manwade, K. B. (2010) se evidencia la implementación de éste en un ambiente MPI y su evaluación de desempeño como algoritmo débilmente acoplado.
 
 ## 6. Objetivos y Alcance
 
