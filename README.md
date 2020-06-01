@@ -32,9 +32,9 @@ Implementar el algoritmo utilizando buenas prácticas y asegurando un funcionami
 
 ## 7. Requerimientos Técnicos
 
-Conocer los conceptos de paralelismo en Arquitectura de Intel y la estructura y funcionamiento del algoritmo en un ambiente pararelo.
+Conocer los conceptos de paralelismo en Arquitectura de Intel y la estructura y funcionamiento del algoritmo en un ambiente paralelo.
 
-Los fundamentos matemáticos para el calculo de los tiempos de comunicación y procesmiento del algoritmo (Merge Sort) paralelo es explicado por Manwade, K. B. (2010) en las imágenes que se observan a continuación.
+Los fundamentos matemáticos para el cálculo de los tiempos de comunicación y procesamiento del algoritmo (Merge Sort) paralelo es explicado por Manwade, K. B. (2010) en las imágenes que se observan a continuación.
 
 ![paper1](images/paper1.png)  
 ![paper2](images/paper2.png)
