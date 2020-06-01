@@ -17,8 +17,8 @@
 
 ## 4. Ideas Preliminares de Proyecto 4
 
-- Paralelizar un algoritmo de ordenamiento
-- Paralelizar un algoritmo de búsqueda
+- Paralelizar un algoritmo de ordenamiento.
+- Paralelizar un algoritmo de búsqueda.
 
 ## 5. Problema o Caso de Estudio a Resolver
 
