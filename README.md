@@ -56,7 +56,9 @@ Los fundamentos matemáticos para el calculo de los tiempos de comunicación y p
 ## 11. Código de Honor
 
 > Yo **Santiago Arredondo Quintero** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
+
 > Yo **Kevyn Santiago Gómez Patiño** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
+
 > Yo **Camilo Gaviria Castrillón** declaro que el contenido de este proyecto es un trabajo original del equipo **2V1R** y la documentación en la que me he guiado está explícitamente referenciada o citada.
 
 ## 12. Referencias
