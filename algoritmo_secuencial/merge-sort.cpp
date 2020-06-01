@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 using namespace std;
 void merge(int *,int, int , int );
@@ -49,17 +50,35 @@ void merge(int *arr, int low, int high, int mid)
 
 
 int main()
-{
-    int myarray[30], num;
-    cout<<"Ingrese numero de elementos a ordenar: ";
-    cin>>num;
-    cout<<"Ingrese "<<num<<" elementos a ordenar: ";
-    for (int i = 0; i < num; i++) { cin>>myarray[i];
-    }
-    merge_sort(myarray, 0, num-1);
-    cout<<"Arreglo ordenado\n";
-    for (int i = 0; i < num; i++)
+{   
+    int numLines = 0;
+    ifstream in("test.txt");
+    string unused;
+    while (getline(in, unused))
+     {
+        ++numLines;
+     }  
+
+    int data[numLines];
+
+    ifstream input("test.txt");
+    for (int i = 0; i < numLines; i++)
+     {
+        input >> data[i];
+     }
+
+    merge_sort(data, 0, numLines-1);  
+
+    ofstream myfile ("result.txt");
+    if (myfile.is_open())
     {
-        cout<<myarray[i]<<"\t";
+    
+    for (int i = 0; i < numLines; i++)
+     {
+        myfile << data[i] << "\n";
+     }
+
+    myfile.close();
     }
+    else cout << "No se pudo abrir el archivo";                        
 }
