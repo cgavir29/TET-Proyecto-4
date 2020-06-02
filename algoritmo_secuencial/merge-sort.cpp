@@ -1,5 +1,8 @@
 #include <fstream>
 #include <iostream>
+#include <sstream>
+#include <string>
+
 using namespace std;
 void merge(int *,int, int , int );
 void merge_sort(int *arr, int low, int high)
@@ -49,7 +52,7 @@ void merge(int *arr, int low, int high, int mid)
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {   
     int numLines = 0;
     ifstream in("test.txt");
@@ -61,15 +64,16 @@ int main()
 
     int data[numLines];
 
-    ifstream input("test.txt");
+    ifstream input(argv[1]);
     for (int i = 0; i < numLines; i++)
      {
         input >> data[i];
      }
 
     merge_sort(data, 0, numLines-1);  
-
-    ofstream myfile ("result.txt");
+    
+    string result = ("result_");
+    ofstream myfile (result + argv[1]);
     if (myfile.is_open())
     {
     
