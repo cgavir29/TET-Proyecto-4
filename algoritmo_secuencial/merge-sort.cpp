@@ -55,7 +55,7 @@ void merge(int *arr, int low, int high, int mid)
 int main(int argc, char *argv[])
 {   
     int numLines = 0;
-    ifstream in("test.txt");
+    ifstream in(argv[1]);
     string unused;
     while (getline(in, unused))
      {
