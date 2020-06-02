@@ -25,7 +25,7 @@ void merge_sort(int *arr, int low, int high)
 // Merge sort
 void merge(int *arr, int low, int high, int mid)
 {
-    int i, j, k, c[50];
+    int i, j, k, c[high+1];
     i = low;
     k = low;
     j = mid + 1;
@@ -65,14 +65,16 @@ void merge(int *arr, int low, int high, int mid)
 
 int main(int argc, char *argv[])
 {   
-
+    
     int numLines = 0;
     ifstream in(argv[1]);
     string unused;
+
     while (getline(in, unused))
     {
         ++numLines;
     }
+
 
     int data[numLines];
 
