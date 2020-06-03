@@ -6,7 +6,7 @@ https://drive.google.com/drive/folders/1piiqewvpliQUFRVZYRBsc58DWFiEK1KA?usp=sha
 
 ## 2. Algoritmo Secuencial
 
-### Descripción del algoritmo
+### 2.1. Descripción del Algoritmo
 
 Se tiene inicialmente un documento de texto de entrada donde se contiene el arreglo de números de enteros que van a ser ordenados.
 Se procesa este archivo y se almacenan los datos en un arreglo y este se envía al algoritmo merge sort para empezar su procesamiento.
