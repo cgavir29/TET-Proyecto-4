@@ -19,6 +19,14 @@ El algoritmo sigue de la siguiente forma:
 
 Para finalizar, se recorre eel arreglo ordenado y se escribe en un documento de texto para entregar el resultado.
 
+### 2.2. Guía de Compilación
+
+### 2.3. Ejecución
+
+### 2.4. Resultados
+
+### 2.5. Eficiencia
+
 ## 3. Algoritmo MPI
 
 ## 4. Algoritmo OpenMP
