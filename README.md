@@ -12,12 +12,12 @@ Se tiene inicialmente un documento de texto de entrada donde se contiene el arre
 Se procesa este archivo y se almacenan los datos en un arreglo y este se envía al algoritmo merge sort para empezar su procesamiento.
 
 El algoritmo sigue de la siguiente forma:
-- Si la longitud del arreglo es 0 ó 1 ya estaba ordenada entonces no se realiza ningún otro procedimiento. De otra forma:
-- Se divide la lista desordenada en dos sublistas de aproximadamente la mitad del tamaño.
-- Se procede a ordenar cada sublista recursivamente aplicando el mismo algoritmo de división.
-- Finalmente se mezclan las dos sublistas obtenidas en una sola lista ordenada y así se completaría todo el proceso.
+- Si la longitud del arreglo es 0 ó 1 ya estaba ordenado entonces no se realiza ningún otro procedimiento. Si no es así se ejecutan los siguientes puntos.
+- Se divide el arreglo desordenado en dos sub-arreglos de la mitad del tamaño.
+- Se procede a ordenar cada sub-arreglo recursivamente aplicando el mismo algoritmo de división.
+- Finalmente se mezclan los dos sub-arreglos obtenidas en uno solo ordenado y así se completaría todo el proceso.
 
-Para finalizar se recorre esta lista ordenada obtenida y se escribe en un documento de texto para enregar el resultado.
+Para finalizar, se recorre eel arreglo ordenado y se escribe en un documento de texto para entregar el resultado.
 
 ## 3. Algoritmo MPI
 
