@@ -85,9 +85,9 @@ int main(int argc, char *argv[])
     }
 
     merge_sort(data, 0, numLines-1);  
-    
-    string result = ("result_");
-    ofstream myfile (result + argv[1]);
+    string argv1(argv[1]);
+    string result = "result_" + argv1;
+    ofstream myfile (result.c_str());
 
     if (myfile.is_open())
     {
