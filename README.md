@@ -21,9 +21,31 @@ Para finalizar, se recorre eel arreglo ordenado y se escribe en un documento de 
 
 ### 2.2. Guía de Compilación
 
+Para comílar el programa utilizamos el siguiente Makefile:
+![imagenes-1](images/makefile.PNG)
+
+Para ejecutarlo corremos el comando:
+-$ make
+
 ### 2.3. Ejecución
 
+Ejecutamos el programa que nos queda despues de compilar pasandole como argumento algun archivo de texto con los datos de la siguiente forma:
+
+-$ ./merge-sort test_100.txt
+
+![imagenes-2](images/corriendo.PNG)
+
 ### 2.4. Resultados
+
+Archivo de 100 numeros antes de merge sort
+
+![imagenes-1](images/test.PNG)
+
+Archivo de 100 numeros despues de merge sort
+
+![imagenes-1](images/test_ordenado.PNG)
+
+
 
 ### 2.5. Eficiencia
 
