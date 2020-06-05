@@ -22,6 +22,7 @@ Para finalizar, se recorre eel arreglo ordenado y se escribe en un documento de 
 ### 2.2. Guía de Compilación
 
 Para comílar el programa utilizamos el siguiente Makefile:
+
 ![imagenes-1](images/makefile.PNG)
 
 Para ejecutarlo corremos el comando:
