@@ -13,7 +13,7 @@ run:	all
 	./merge
 
 queue: all
-	   echo 'cd $$PBS_O_WORKDIR ; ./merge $$TEST' | qsub
+	   echo 'cd $$PBS_O_WORKDIR ; ./merge $(TEST)' | qsub
 
 clean:
 	rm -f *.o merge *~ result* STD*

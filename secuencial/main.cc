@@ -90,6 +90,6 @@ int main(int argc, char *argv[]) {
     printf("\033[1m%s\033[0m\n%8s   \033[42m%8.1f+-%.1f\033[0m   \033",
             "Average performance:", "", t, dt);
     printf("-----------------------------------------------------\n");
-    printf("* - warm-up, not included in average\n\n");
+    printf("* - wwarm-up, not included in average\n\n");
 
 }
