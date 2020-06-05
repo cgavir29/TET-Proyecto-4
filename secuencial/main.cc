@@ -35,11 +35,6 @@ int main(int argc, char *argv[]) {
         input >> data[i];
     }
 
-    //if(argc < 2) {
-    //    printf("Usage: %s {file}\n", argv[0]);
-    //    exit(1);
-    //}
-
     printf("\033[1m%5s %15s\033[0m\n", "Step", "Time, ms"); 
     fflush(stdout);
 
