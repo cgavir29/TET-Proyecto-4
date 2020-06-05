@@ -12,6 +12,7 @@ Se tiene inicialmente un documento de texto de entrada donde se contiene el arre
 Se procesa este archivo y se almacenan los datos en un arreglo y este se envía al algoritmo merge sort para empezar su procesamiento.
 
 El algoritmo sigue de la siguiente forma:
+
 - Si la longitud del arreglo es 0 ó 1 ya estaba ordenado entonces no se realiza ningún otro procedimiento. Si no es así se ejecutan los siguientes puntos.
 - Se divide el arreglo desordenado en dos sub-arreglos de la mitad del tamaño.
 - Se procede a ordenar cada sub-arreglo recursivamente aplicando el mismo algoritmo de división.
@@ -19,43 +20,53 @@ El algoritmo sigue de la siguiente forma:
 
 Para finalizar, se recorre eel arreglo ordenado y se escribe en un documento de texto para entregar el resultado.
 
-### 2.2. Guía de Compilación
+### 2.2. Pseudocódigo
+
+![imagenes-1](images/seudocode.PNG)
+
+### 2.3. Guía de Compilación
 
 Para comílar el programa utilizamos el siguiente Makefile:
 
-![imagenes-1](images/makefile.PNG)
+![imagenes-1](images/compile.png)
 
-Para ejecutarlo corremos el comando:
--$ make
+Para ejecutarlo corremos el comando: `make` como se ve en la imagen.
 
-### 2.3. Ejecución
+### 2.4. Ejecución
 
 Ejecutamos el programa que nos queda despues de compilar pasandole como argumento algun archivo de texto con los datos de la siguiente forma:
 
--$ ./merge-sort test_100.txt
+![imagenes-2](images/execute.png)
 
-![imagenes-2](images/corriendo.PNG)
+### 2.5. Resultados
 
-### 2.4. Resultados
+Archivo de 10000 numeros antes de merge sort
 
-Archivo de 100 numeros antes de merge sort
+![imagenes-3](images/input.png)
 
-![imagenes-1](images/test.PNG)
+Archivo de 10000 numeros despues de merge sort
 
-Archivo de 100 numeros despues de merge sort
+![imagenes-4](images/output.png)
 
-![imagenes-1](images/test_ordenado.PNG)
+### 2.6. Eficiencia
 
+Los siguientes fueron los resultados para los datasets con N (número de datos) 100, 1000, 10000, 100000, 10000000.
 
+- N = 100
+  ![imagenes-5](images/time_100.png)
 
-### 2.5. Eficiencia
+- N = 1000
+  ![imagenes-6](images/time_1000.png)
 
-### 2.6. Pseudocódigo
+- N = 10000
+  ![imagenes-7](images/time_10000.png)
 
-![imagenes-1](images/seudocode.PNG)
+- N = 100000
+  ![imagenes-8](images/time_100000.png)
+
+- N = 1000000
+  ![imagenes-9](images/time_1000000.png)
 
 ## 3. Algoritmo MPI
 
 ## 4. Algoritmo OpenMP
-
-
