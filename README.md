@@ -50,6 +50,10 @@ Archivo de 100 numeros despues de merge sort
 
 ### 2.5. Eficiencia
 
+### 2.6. Pseudocódigo
+
+![imagenes-1](images/seudocode.PNG)
+
 ## 3. Algoritmo MPI
 
 ## 4. Algoritmo OpenMP
