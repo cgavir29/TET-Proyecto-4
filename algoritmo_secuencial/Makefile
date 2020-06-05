@@ -1,9 +1,14 @@
-TARGET=merge-sort.cpp
+CXX=icpc
 
-default: merge-sort
+OBJECTS=merge-sort.o
 
-merge-sort : ${TARGET}
-	icpc -o "$@" "$<"
+merge: $(OBJECTS)
+	$(CXX) -o merge $(OBJECTS)
 
-clean :
-	rm merge-sort
+all:	merge
+
+run:	all
+	./merge
+
+clean:
+	rm -f *.o merge *~ result*
