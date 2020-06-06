@@ -7,6 +7,7 @@ https://drive.google.com/drive/folders/1piiqewvpliQUFRVZYRBsc58DWFiEK1KA?usp=sha
 ## 2. Link videos
 
 - Kevyn Santiago Gómez Patiño:
+https://www.youtube.com/watch?v=gjFhn1QloPc&feature=youtu.be
 
 
 ## 3. Algoritmo Secuencial
