@@ -1,4 +1,5 @@
 #include <cmath>
+#include <mpi.h>
 #include <omp.h>
 #include <fstream>
 #include <iostream>
@@ -43,7 +44,7 @@ int main(int argc, char *argv[]) {
     for (int iTrial = 1; iTrial <= nTrials; iTrial++) {
         const double t0 = omp_get_wtime();
         // Run Merge Sort
-        merge_sort_parallel(data,numLines);
+        merge_sort_parallel(data,numLines, argc, argv);
         const double t1 = omp_get_wtime();
 
         const double ts   = t1-t0; // time in seconds
