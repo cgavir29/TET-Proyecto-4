@@ -69,4 +69,18 @@ Los siguientes fueron los resultados para los datasets con N (número de datos) 
 
 ## 3. Algoritmo MPI
 
-## 4. Algoritmo OpenMP
+### 3.1. Descripción del Algoritmo
+
+La metodología usada para el algoritmo paralelo utiliza el modelo master-esclavo en forma de árbol para la clasificación paralela. Cada proceso recibe la lista de elementos de su proceso precedente, luego lo divide en dos mitades, mantiene la mitad y envía la segunda mitad para su sucesor. La idea es que ningún proceso permanezca inactivo, esperando recibir dos resultados de sus hijos. En cambio, queremos que el padre envie la mitad del trabajo al proceso hijo y luego realice la mitad del trabajo en sí. 
+
+Con llamadas recursivas se emula tanto la transmisión de las mitades derechas del arreglo y el procesamiento las mitades izquierdas. Después de eso, recibirá los datos ordenados de su sucesor y fusionará esas dos sub arreglos. Entonces se envía el resultado a su precedor. Este proceso continuará hasta el nodo raíz.
+
+#### 3.1.1. Procedimiento Merge Sort Paralelo:
+1. Calcular en numero de rank del proceso.
+2. Asignar rank a los procesos padres e hijos.
+3. Verifique el hijo izquierdo y derecho de acuerdo con el rank del proceso.
+4. Ordenar sub arreglo izquierdo.
+5. Verifique el estado de devolución de los procesos hijos.
+6. Enviar datos ordenados al proceso padre.
+7. Repite el paso 4 para la el sub arreglo derecho.
+8. Fusionar los dos resultados nuevamente en una nuevo arreglo.

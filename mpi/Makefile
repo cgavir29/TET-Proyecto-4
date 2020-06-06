@@ -1,6 +1,6 @@
-CXX=icpc
-CXXFLAGS=-c -fopenmp
-LDFLAGS=-fopenmp
+CXX=mpiicpc
+CXXFLAGS=-c -qopenmp
+LDFLAGS=-qopenmp
 
 OBJECTS=main.o merge-sort.o
 
@@ -13,7 +13,7 @@ run:	all
 	./merge
 
 queue: all
-	   echo 'cd $$PBS_O_WORKDIR ; ./merge $(TEST)' | qsub
+	   echo 'cd $$PBS_O_WORKDIR ; mpirun -machinefile $$PBS_NODEFILE ./merge $(TEST)' | qsub
 
 clean:
 	rm -f *.o merge *~ result* STD*

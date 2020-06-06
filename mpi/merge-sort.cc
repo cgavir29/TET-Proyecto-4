@@ -2,14 +2,26 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include "mpi.h"
+#include <mpi.h>
+#include <omp.h>
 #include "merge-sort.h"
 
 
 using namespace std;
 
-void merge_sort_parallel(int *original_array, int n)
+void merge_sort_parallel(int *original_array, int n, int argc, char** argv)
 {
+<<<<<<< HEAD
+=======
+	
+	/********** Initialize MPI **********/
+	int world_rank;
+	int world_size;
+	
+	MPI_Init(&argc, &argv);
+	MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
+	MPI_Comm_size(MPI_COMM_WORLD, &world_size);
+>>>>>>> 0eb4d6a11edcb033d61275be762d405550300ce5
 		
 
 void merge_sort(int *arr, int low, int high)
