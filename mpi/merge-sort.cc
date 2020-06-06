@@ -2,13 +2,13 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include "mpi.h"
+#include <mpi.h>
+#include <omp.h>
 #include "merge-sort.h"
 
 
 using namespace std;
-
-		
+	
 
 void merge_sort(int *arr, int low, int high)
 {
