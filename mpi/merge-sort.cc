@@ -10,57 +10,7 @@ using namespace std;
 
 void merge_sort_parallel(int *original_array, int n)
 {
-	
-	/********** Initialize MPI **********/
-	int world_rank;
-	int world_size;
-	
-	MPI_INIT(&argc, &argv);
-	MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
-	MPI_Comm_size(MPI_COMM_WORLD, &world_size);
 		
-	/********** Divide the array in equal-sized chunks **********/
-	int size = n/world_size;
-	
-	/********** Send each subarray to each process **********/
-	int *sub_array = new int[size];
-	MPI_Scatter(original_array, size, MPI_INT, sub_array, size, MPI_INT, 0, MPI_COMM_WORLD);
-	
-	/********** Perform the mergesort on each process **********/
-	int *tmp_array = new int[size];
-	merge_sort(sub_array, 0, size - 1);
-	
-	/********** Gather the sorted subarrays into one **********/
-	int *sorted = NULL;
-	if(world_rank == 0) {
-		
-		sorted = new int[n];;
-		
-		}
-	
-	MPI_Gather(sub_array, size, MPI_INT, sorted, size, MPI_INT, 0, MPI_COMM_WORLD);
-	
-	/********** Make the final mergeSort call **********/
-	if(world_rank == 0) {
-		
-		int *other_array = new int[n];;
-		merge_sort(sorted, 0, n - 1);
-			
-		/********** Clean up root **********/
-		free(sorted);
-		free(other_array);
-			
-		}
-	
-	/********** Clean up rest **********/
-	free(original_array);
-	free(sub_array);
-	free(tmp_array);
-	
-	/********** Finalize MPI **********/
-	MPI_Barrier(MPI_COMM_WORLD);
-	MPI_Finalize();
-}
 
 void merge_sort(int *arr, int low, int high)
 {
@@ -98,20 +48,28 @@ void merge(int *arr, int low, int high, int mid)
             j++;
         }
     }
-    while (i <= mid)
-    {
-        c[k] = arr[i];
+
+    #pragma omp parallel for
+    for(int x = i; x<=mid ;x++){
+        #pragma omp critical
+        {
+        c[k] = arr[x];
         k++;
-        i++;
+        }
     }
-    while (j <= high)
-    {
-        c[k] = arr[j];
+    #pragma omp parallel for
+    for(int y = j; y<=high ;y++){
+        #pragma omp critical
+        {
+        c[k] = arr[y];
         k++;
-        j++;
+        }
     }
-    for (i = low; i < k; i++)
-    {
+    #pragma omp parallel for
+    for (i = low; i < k; i++) {
+        #pragma omp critical
+        {
         arr[i] = c[i];
+        }
     }
 }
