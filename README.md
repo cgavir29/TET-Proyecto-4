@@ -69,4 +69,3 @@ Los siguientes fueron los resultados para los datasets con N (número de datos) 
 
 ## 3. Algoritmo MPI
 
-## 4. Algoritmo OpenMP
