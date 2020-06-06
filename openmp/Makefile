@@ -1,6 +1,6 @@
 CXX=icpc
-CXXFLAGS=-c -fopenmp
-LDFLAGS=-fopenmp
+CXXFLAGS=-c -qopenmp
+LDFLAGS=-qopenmp
 
 OBJECTS=main.o merge-sort.o
 

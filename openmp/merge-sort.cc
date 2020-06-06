@@ -2,7 +2,6 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-#include "mpi.h"
 #include "merge-sort.h"
 
 
@@ -20,6 +19,7 @@ void merge_sort(int *arr, int low, int high)
         merge_sort(arr, low, mid);
         merge_sort(arr, mid + 1, high);
         //combina o fusiona los arreglos ordenados
+	#pragma omp parallel
         merge(arr, low, high, mid);
     }
 }
@@ -47,25 +47,21 @@ void merge(int *arr, int low, int high, int mid)
         }
     }
 
-    #pragma omp parallel for
+    
     for(int x = i; x<=mid ;x++){
-        #pragma omp critical
         {
         c[k] = arr[x];
         k++;
         }
     }
-    #pragma omp parallel for
+
     for(int y = j; y<=high ;y++){
-        #pragma omp critical
         {
         c[k] = arr[y];
         k++;
         }
     }
-    #pragma omp parallel for
     for (i = low; i < k; i++) {
-        #pragma omp critical
         {
         arr[i] = c[i];
         }
