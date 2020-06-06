@@ -75,14 +75,12 @@ La metodología usada para el algoritmo paralelo utiliza el modelo master-esclav
 
 Con llamadas recursivas se emula tanto la transmisión de las mitades derechas del arreglo y el procesamiento las mitades izquierdas. Después de eso, recibirá los datos ordenados de su sucesor y fusionará esas dos sub arreglos. Entonces se envía el resultado a su precedor. Este proceso continuará hasta el nodo raíz.
 
-MPI_COMM_WORLD es el comunicador inicial, que contiene todos los procesos involucrados en el cálculo. Cada proceso se comunica con los demás a través de ese comunicador, y tiene la capacidad de encontrar una posición dentro el comunicador y también el número total de procesos en el comunicador.
-
 #### 3.1.1. Procedimiento Merge Sort Paralelo:
-1 Calcular en numero de rank del proceso.
-2 Asignar rank a los procesos padres e hijos.
-3 Verifique el hijo izquierdo y derecho de acuerdo con el rank del proceso.
-4 ordenar sub arreglo izquierdo.
-5 verifique el estado de devolución de los procesos hijos.
-6 Enviar datos ordenados al proceso padre.
-7 repite el paso 4 para la el sub arreglo derecho.
-8 Fusionar los dos resultados nuevamente en una nuevo arreglo.
+1. Calcular en numero de rank del proceso.
+2. Asignar rank a los procesos padres e hijos.
+3. Verifique el hijo izquierdo y derecho de acuerdo con el rank del proceso.
+4. Ordenar sub arreglo izquierdo.
+5. Verifique el estado de devolución de los procesos hijos.
+6. Enviar datos ordenados al proceso padre.
+7. Repite el paso 4 para la el sub arreglo derecho.
+8. Fusionar los dos resultados nuevamente en una nuevo arreglo.
